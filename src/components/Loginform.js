@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 import Card from './Card';
+import Button from './Button';
 
 
 class Loginform extends Component {
@@ -12,9 +13,16 @@ class Loginform extends Component {
 
 	render(){
 		return(
-			<Card>
-				<Text>Hello from Login</Text>
-			</Card>
+			
+			<View>
+				<Card>
+					<Text>Hello from Login</Text>
+				</Card>
+
+				<Card>
+					<Button/>
+				</Card>
+			</View>
 
 		);
 	}
