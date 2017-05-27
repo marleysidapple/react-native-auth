@@ -6,6 +6,7 @@
 
 import React, { Component } from 'react';
 import Header from './src/components/Header';
+import Loginform from './src/components/Loginform';
 import {
   AppRegistry,
   StyleSheet,
@@ -18,6 +19,7 @@ export default class reactNativeAuth extends Component {
     return (
       <View>
         <Header headerText={'Authentication'}/>
+        <Loginform />
       </View>
     );
   }
