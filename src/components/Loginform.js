@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, TextInput } from 'react-native';
 import Card from './../common/Card';
 import Button from './../common/Button';
 import CardSection from './../common/CardSection';
+import Input from './../common/Input';
 
 
 
@@ -10,6 +11,7 @@ class Loginform extends Component {
 
 	constructor(props){
 		super(props);
+		this.state = { email: '', password: '' };
 	}
 
 
@@ -19,8 +21,21 @@ class Loginform extends Component {
 			<View>
 				<Card>
 					
-				<CardSection/>
-				<CardSection/>
+				<CardSection>
+					 <Input
+					        onChangeText={(email) => this.setState({email})}
+					        placeholder='Email'
+					        value={this.state.email} />
+				</CardSection>
+
+
+				<CardSection>
+					 <Input
+					        onChangeText={(password) => this.setState({password})}
+					        placeholder='Password'
+					        secureTextEntry={true}
+					        value={this.state.password} />
+				</CardSection>
 
 				
 					<Button/>
@@ -32,5 +47,7 @@ class Loginform extends Component {
 	}
 
 }
+
+
 
 export default Loginform;
