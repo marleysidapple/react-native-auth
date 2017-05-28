@@ -22,7 +22,6 @@ const styles = {
 		//flex: 1,
 		borderColor: '#007aff',
 		borderWidth: 1,
-		borderHeight: 0,
 		borderRadius: 2,
 		padding: 10,
 		marginTop: 5,
