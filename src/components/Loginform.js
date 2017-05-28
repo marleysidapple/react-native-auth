@@ -17,11 +17,9 @@ class Loginform extends Component {
 			<View>
 				<Card>
 					<Text>Hello from Login</Text>
-				</Card>
-
-				<Card>
 					<Button/>
 				</Card>
+
 			</View>
 
 		);

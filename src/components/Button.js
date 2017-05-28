@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
 
 class Button extends Component {
 
@@ -9,9 +9,9 @@ class Button extends Component {
 
 	render(){
 		return(
-			<View style={styles.buttonWrapper}>
-				<Text>Login</Text>
-			</View>
+			<TouchableOpacity style={styles.buttonWrapper}>
+				<Text style={styles.buttonText}>Login</Text>
+			</TouchableOpacity>
 		);
 	}
 }
@@ -19,10 +19,18 @@ class Button extends Component {
 
 const styles = {
 	buttonWrapper : {
-		flex: 1,
-		borderColor: 'blue',
+		//flex: 1,
+		borderColor: '#007aff',
+		borderWidth: 1,
+		borderHeight: 0,
 		borderRadius: 2,
-		backgroundColor: 'red'
+		padding: 10,
+		marginTop: 5,
+		alignSelf: 'stretch',
+	},
+
+	buttonText: {
+		alignSelf: 'center',
 	}
 }
 
