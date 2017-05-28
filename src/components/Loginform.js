@@ -24,7 +24,7 @@ class Loginform extends Component {
 				<CardSection>
 					 <Input
 					        onChangeText={(email) => this.setState({email})}
-					        placeholder='Email'
+					        placeholder='something@mail.com'
 					        value={this.state.email} />
 				</CardSection>
 

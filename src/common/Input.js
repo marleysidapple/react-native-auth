@@ -15,6 +15,8 @@ class Input extends Component {
 			<TextInput style={styles.textInputStyle} 
 			placeholder={this.props.placeholder} 
 			value = {this.props.value}
+			autoCorrect = {false}
+			autoCapitalize={'none'}
 			secureTextEntry={this.props.secureTextEntry}
 			onChangeText = {this.props.onChangeText} />
 		);
@@ -28,7 +30,8 @@ const styles = {
 		height: 25,
 		borderWidth: 0,
 		borderColor: 'gray',
-		alignSelf: 'stretch'
+		alignSelf: 'stretch',
+		fontSize: 14
 	}
 }
 
