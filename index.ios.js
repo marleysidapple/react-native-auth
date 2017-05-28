@@ -10,14 +10,5 @@ import {
   AppRegistry,
 } from 'react-native';
 
-export default class reactNativeAuth extends Component {
-  render() {
-    return (
-      <App />
-    );
-  }
-}
 
-
-
-AppRegistry.registerComponent('reactNativeAuth', () => reactNativeAuth);
+AppRegistry.registerComponent('reactNativeAuth', () => App);
