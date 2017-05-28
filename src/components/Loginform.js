@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
-import Card from './Card';
-import Button from './Button';
+import Card from './../common/Card';
+import Button from './../common/Button';
 
 
 class Loginform extends Component {
